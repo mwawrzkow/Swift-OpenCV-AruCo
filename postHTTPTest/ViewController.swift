@@ -6,14 +6,22 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func onClick(_ sender: UIButton) {
+        let story = UIStoryboard(name: "Main",bundle:nil)
+        let controller = story.instantiateViewController(identifier: "onlogged") as! onLogged
+        let navigation = UINavigationController(rootViewController: controller)
+        self.view.addSubview(navigation.view)
+        self.addChild(navigation)
+        navigation.didMove(toParent: self)
     }
-
-
+    @IBAction func onClickCamera(_ sender: Any) {
+        let story = UIStoryboard(name: "Main",bundle:nil)
+        let controller = story.instantiateViewController(identifier: "arucoCamera") as! ArucoCameraDetection
+        let navigation = UINavigationController(rootViewController: controller)
+        self.view.addSubview(navigation.view)
+        self.addChild(navigation)
+        navigation.didMove(toParent: self)
+    }
 }
 

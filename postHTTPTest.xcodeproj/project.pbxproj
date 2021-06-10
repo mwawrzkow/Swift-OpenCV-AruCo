@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020AA10B265A831400283A93 /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 020AA10A265A831400283A93 /* CocoaAsyncSocket */; };
+		020B749F266EEC970023DDBE /* ArucoCameraDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B749E266EEC970023DDBE /* ArucoCameraDetection.swift */; };
+		0221D4FE265597F900716889 /* onLogged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221D4FD265597F900716889 /* onLogged.swift */; };
 		023D86B6261E68CE00E2BFB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D86B5261E68CE00E2BFB8 /* AppDelegate.swift */; };
 		023D86B8261E68CE00E2BFB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D86B7261E68CE00E2BFB8 /* SceneDelegate.swift */; };
 		023D86BA261E68CE00E2BFB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D86B9261E68CE00E2BFB8 /* ViewController.swift */; };
 		023D86BD261E68CE00E2BFB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023D86BB261E68CE00E2BFB8 /* Main.storyboard */; };
 		023D86BF261E68D100E2BFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023D86BE261E68D100E2BFB8 /* Assets.xcassets */; };
 		023D86C2261E68D100E2BFB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023D86C0261E68D100E2BFB8 /* LaunchScreen.storyboard */; };
+		0284CF292670904D002A0CD8 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0284CF282670904C002A0CD8 /* opencv2.framework */; };
+		0284CF2C26709101002A0CD8 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0284CF2B26709101002A0CD8 /* OpenCVWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		020AA112265A88FB00283A93 /* postHTTPTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "postHTTPTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		020B749E266EEC970023DDBE /* ArucoCameraDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArucoCameraDetection.swift; path = Aruco/ArucoCameraDetection.swift; sourceTree = "<group>"; };
+		0221D4FD265597F900716889 /* onLogged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = onLogged.swift; path = ../onLogged.swift; sourceTree = "<group>"; };
 		023D86B2261E68CD00E2BFB8 /* postHTTPTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = postHTTPTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023D86B5261E68CE00E2BFB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		023D86B7261E68CE00E2BFB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,9 @@
 		023D86BE261E68D100E2BFB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		023D86C1261E68D100E2BFB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		023D86C3261E68D100E2BFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0284CF282670904C002A0CD8 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ios/opencv2.framework; sourceTree = SOURCE_ROOT; };
+		0284CF2A26709101002A0CD8 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		0284CF2B26709101002A0CD8 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0284CF292670904D002A0CD8 /* opencv2.framework in Frameworks */,
+				020AA10B265A831400283A93 /* CocoaAsyncSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 		023D86A9261E68CD00E2BFB8 = {
 			isa = PBXGroup;
 			children = (
+				0284CF2A26709101002A0CD8 /* OpenCVWrapper.h */,
+				0284CF2B26709101002A0CD8 /* OpenCVWrapper.mm */,
 				023D86B4261E68CD00E2BFB8 /* postHTTPTest */,
 				023D86B3261E68CD00E2BFB8 /* Products */,
 			);
@@ -56,6 +71,8 @@
 		023D86B4261E68CD00E2BFB8 /* postHTTPTest */ = {
 			isa = PBXGroup;
 			children = (
+				0284CF282670904C002A0CD8 /* opencv2.framework */,
+				020AA112265A88FB00283A93 /* postHTTPTest-Bridging-Header.h */,
 				023D86B5261E68CE00E2BFB8 /* AppDelegate.swift */,
 				023D86B7261E68CE00E2BFB8 /* SceneDelegate.swift */,
 				023D86B9261E68CE00E2BFB8 /* ViewController.swift */,
@@ -63,6 +80,8 @@
 				023D86BE261E68D100E2BFB8 /* Assets.xcassets */,
 				023D86C0261E68D100E2BFB8 /* LaunchScreen.storyboard */,
 				023D86C3261E68D100E2BFB8 /* Info.plist */,
+				0221D4FD265597F900716889 /* onLogged.swift */,
+				020B749E266EEC970023DDBE /* ArucoCameraDetection.swift */,
 			);
 			path = postHTTPTest;
 			sourceTree = "<group>";
@@ -83,6 +102,9 @@
 			dependencies = (
 			);
 			name = postHTTPTest;
+			packageProductDependencies = (
+				020AA10A265A831400283A93 /* CocoaAsyncSocket */,
+			);
 			productName = postHTTPTest;
 			productReference = 023D86B2261E68CD00E2BFB8 /* postHTTPTest.app */;
 			productType = "com.apple.product-type.application";
@@ -98,6 +120,7 @@
 				TargetAttributes = {
 					023D86B1261E68CD00E2BFB8 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -110,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 023D86A9261E68CD00E2BFB8;
+			packageReferences = (
+				020AA109265A831400283A93 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+			);
 			productRefGroup = 023D86B3261E68CD00E2BFB8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020B749F266EEC970023DDBE /* ArucoCameraDetection.swift in Sources */,
+				0221D4FE265597F900716889 /* onLogged.swift in Sources */,
+				0284CF2C26709101002A0CD8 /* OpenCVWrapper.mm in Sources */,
 				023D86BA261E68CE00E2BFB8 /* ViewController.swift in Sources */,
 				023D86B6261E68CE00E2BFB8 /* AppDelegate.swift in Sources */,
 				023D86B8261E68CE00E2BFB8 /* SceneDelegate.swift in Sources */,
@@ -174,6 +203,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -220,9 +250,12 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = iphoneos;
+				SHARED_PRECOMPS_DIR = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 			};
 			name = Debug;
 		};
@@ -235,6 +268,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -274,9 +308,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = iphoneos;
+				SHARED_PRECOMPS_DIR = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -286,8 +323,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B77NH426MX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ios",
+				);
 				INFOPLIST_FILE = postHTTPTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,6 +337,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.postHTTPTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "postHTTPTest/postHTTPTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,8 +349,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B77NH426MX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ios",
+				);
 				INFOPLIST_FILE = postHTTPTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,6 +363,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.postHTTPTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "postHTTPTest/postHTTPTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		020AA109265A831400283A93 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		020AA10A265A831400283A93 /* CocoaAsyncSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 020AA109265A831400283A93 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
+			productName = CocoaAsyncSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 023D86AA261E68CD00E2BFB8 /* Project object */;
 }
